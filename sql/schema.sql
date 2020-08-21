@@ -1,0 +1,12 @@
+DROP DATABASE IF EXISTS todolist_db;
+
+CREATE DATABASE todolist_db;
+
+USE todolist_db;
+
+CREATE TABLE items (
+	id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    text VARCHAR(50) NOT NULL,
+    isDone BOOL NOT NULL DEFAULT 0
+);
+
